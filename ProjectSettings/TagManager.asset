@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Volume
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: MOON
+    uniqueID: 3287010421
+    locked: 0
+  - name: Fukidashi
+    uniqueID: 2693317587
     locked: 0

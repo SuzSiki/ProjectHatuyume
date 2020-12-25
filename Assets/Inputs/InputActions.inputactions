@@ -1,0 +1,33 @@
+{
+    "name": "InputActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "85707c81-eaca-43ec-b905-588e5734986b",
+            "actions": [
+                {
+                    "name": "Talknext",
+                    "type": "Button",
+                    "id": "ab47a31c-b222-49f6-b00b-ccd85f8019f7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f8688c7d-2aad-4bec-81a3-ac29faa3efc5",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Talknext",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
