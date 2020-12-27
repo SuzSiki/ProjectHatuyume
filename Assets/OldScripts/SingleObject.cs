@@ -1,34 +1,45 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using System.Collections;
 
-public abstract class SingleObject:MonoBehaviour{
-    protected static List<SingleObject> SingleObjectList = new List<SingleObject>();
+public abstract class SingleObject : MonoBehaviour
+{
+    //protected static List<SingleObject> SingleObjectList = new List<SingleObject>();
+    protected static Dictionary<string, SingleObject> SingleObjectList = new Dictionary<string, SingleObject>();
 
-
+    protected string ClassName;
     protected virtual void Awake()
     {
         Singleton();
         SetInstance();
     }
 
+
+
+
+
+    ///<summary>
+    ///SingleObject内のAwakeで呼ばれるので、
+    ///</summary>
     protected abstract void SetInstance();
+
+    //自分自身のインスタンスを取得。
+    protected SingleObject GetInstance()
+    {
+        return SingleObjectList[this.GetType().Name];
+    }
 
     void Singleton()
     {
-        foreach(SingleObject obj in SingleObjectList)
+        ClassName = this.GetType().Name;
+        SingleObject mem = null;
+        SingleObjectList.TryGetValue(ClassName,out mem);
+        if (mem == null)
         {
-            if(obj.name == this.name)
-            {
-                Destroy(this.gameObject);
-                return;
-            }
+            SingleObjectList[ClassName] = this;
+            return;
         }
-        SingleObjectList.Add(this);
-    }
-
-    void OnDestroy()
-    {
-        SingleObjectList.Remove(this);
+        Destroy(this.gameObject);
     }
 }

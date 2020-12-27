@@ -1,6 +1,6 @@
 using UnityEngine;
 
-
+/*
 public class StateManager:SingleObject{
     public States NowState;
     States LastState;
@@ -33,3 +33,4 @@ public enum States{
     Talking
 
 }
+*/

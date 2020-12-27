@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.Events;
 using UnityEngine;
+/*
 [CreateAssetMenu]
 public class KeyConfigData : ScriptableObject
 {
@@ -27,3 +28,4 @@ public enum InputType{
     up,
     wile
 }
+*/

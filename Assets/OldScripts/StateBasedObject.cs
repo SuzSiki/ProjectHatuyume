@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 //GameManagerのStateの影響を受けるオブジェクト
 public class StateBasedObject : MonoBehaviour
 {
@@ -34,3 +34,4 @@ public class StateBasedObject : MonoBehaviour
         
     }
 }
+*/

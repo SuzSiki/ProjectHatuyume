@@ -1,0 +1,52 @@
+{
+    "name": "TalkingActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "205e2b19-562d-45d5-90cc-0222e1aa2bc8",
+            "actions": [
+                {
+                    "name": "Positive",
+                    "type": "Button",
+                    "id": "4b8fe153-6441-4602-b152-3256f4491bb9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "CardThrow",
+                    "type": "Button",
+                    "id": "3fadebb4-dc85-4f66-9379-a0164a507649",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a43cc22b-133a-4aab-ae55-97c2bca92b98",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Positive",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1dd24d26-8b71-4a4c-aeb7-7c2549f6d0f0",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CardThrow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

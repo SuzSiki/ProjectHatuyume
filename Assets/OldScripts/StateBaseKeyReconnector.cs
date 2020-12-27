@@ -1,7 +1,7 @@
 ﻿using UnityEngine.Events;
 using UnityEngine;
 using System.Collections.Generic;
-
+/*
 //コマンドやオブザーバーなどいろいろな方を検討された後、結局UNITYEventベースで動くことになった悲しいクラス
 public class StateBaseKeyReconnector : StateBasedObject
 {
@@ -34,3 +34,4 @@ public class StateBaseKeyReconnector : StateBasedObject
     
 
 }
+*/
